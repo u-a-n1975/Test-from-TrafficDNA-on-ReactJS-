@@ -1,0 +1,80 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.test {
+  width: 100%;
+  background-color: rgba(35, 150, 100, 0.3);
+
+  .screen1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__item-block {
+      width: max-content;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__item {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      border: 1px solid green;
+      border-radius: 15px;
+      background-color: wheat;
+      overflow: hidden;
+      outline: none;
+
+      &--image {
+        height: 100%;
+      }
+      &--name {
+        padding: 20px 50px;
+      }
+    }
+  }
+  .screen2 {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__input {
+      width: 100vw;
+      max-width: 600px;
+      padding: 20px 50px;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+    &__buttons-block {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  button {
+    width: max-content;
+    height: min-content;
+    padding: 20px 50px;
+    background-color: darkgray;
+    font-size: 2rem;
+  }
+  *:focus {
+    border: 2px solid red;
+  }
+}
